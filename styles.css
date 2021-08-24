@@ -1,0 +1,29 @@
+ :root{
+     --offcanvas-width:220px;
+     --topNavbarHeight:65px;
+    
+ }
+    .sidebar-nav{
+        width:var(--offcanvas-width);
+    }
+
+    @media (min-width:992px){
+        body{
+            overflow:auto! important;
+        }
+        .offcanvas-backdrop::before{
+            display: none;
+            
+ 
+            }
+        }
+        .sidebar-nav{ 
+            transform: none;
+            visibility: visible !important;
+           
+            top: var(--topNavbarHeight);
+            height: calc(100%-(var(--topNavbarHeight)));
+        }
+     main{ 
+         padding-left: 220px;
+     } 
